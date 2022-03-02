@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    font-family: 'Roboto' , sans-serif
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 3fr 3fr;
+    
+}
+.sidebar {
+    grid-row: 1 / 4;
+    grid-column: 1 / 2;
+    background-color: rgb(64, 158, 235);
+}
+.dashboard {
+    padding-left: 30px;
+    color: white;
+    font-size: 25px;
+}
+
+.header {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+.mainContent { 
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+    padding-left: 30px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 10px;
+}
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+li img, .trending img, .topRight img, .card img {
+    max-height: 30px;
+    max-width: 30px;
+}
+
+.search > img {
+    height: 20px;
+    width: 20px;
+}
+.search {
+    display: grid;
+    grid-template-columns: .1fr 2fr 1.2fr;
+    width: 100%;
+    column-gap: 10px;
+    padding-top: 20px;
+    padding-left: 50px;
+    
+}
+
+input[type=text] {
+    border-radius: 7px;
+    border: none;
+    width: 500px;
+    background-color: rgba(151, 181, 216, 0.473);
+    max-height: 20px;
+}
+
+.mainContent {
+    background-color: rgba(151, 181, 216, 0.473);
+    padding-bottom: 50px;
+}
+
+.card {
+    height: 250px;
+    width: 300px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.card p {
+    padding-bottom: 30px;
+}
+
+.title {
+    font-weight: bold;
+}
+
+hr {
+    border: 1px solid black;
+}
+
+.containerTwo, .trending {
+    padding: 10px;
+    background-color: white
+}
+.containerTwo {
+    height: 450px;
+    border-radius: 10px;
+    width: 250px;
+    font-size: small;
+}
+.announcements h3 {
+    padding-top: 15px;
+}
+
+.mid ul { 
+    list-style-type: none;
+    color: white;
+    padding-left: 30px;
+}
+
+li {
+    padding: 10px;
+}
+.dashboard img {
+    padding-right: 10px;
+}
+
+li img {
+    padding-right: 15px;
+    background-blend-mode: multiply;
+}
+
+.trending img {
+    padding-right: 10px;
+}
+
+.trending {
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    margin-top: 15px;
+    font-size: 14px;
+    
+}
+
+.secondCard p, .card p {
+    opacity: 50%;
+}
+
+.title {
+    display: inline-block;
+    padding-top: 10px;
+}
+
+.whole {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    padding-left: 10px;
+}
+.intro {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    padding-left: 50px;
+    width: 100%;
+    font-weight: bold;
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+.introText span:first-of-type {
+    font-size: 12px;
+}
+
+.introText > img {
+    height: 50px;
+    width: 50px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+}
+
+.introText {
+    display: flex;
+}
+
+.text, .introSpan {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.trending > .whole:first-child div:first-of-type,
+.trending > .whole:first-child img:first-of-type{
+    padding-top: 20px;
+}
+
+.text span:nth-child(2) {
+    opacity: 50%
+}
+
+.buttons button {
+    margin-left: 30px;
+    border: none;
+    border-radius: 19px;
+    background-color: rgb(64, 158, 235);
+    color: white;
+    height: 35px;
+    width: 85px;
+}
+
+.card {
+    border-left: 12px solid rgb(214, 158, 52);
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icons img {
+    padding: 10px;
+}
+
+.dashboard img {
+    height: 45px;
+    width: 45px;
+}
+
+.dashboard {
+    display: flex;
+    align-items: center;
+}
+
+hr {
+    opacity: 30%;
+}
+
+.rightSide {
+    display: grid;
+    grid-template-rows: .11fr 1fr
+}
+
+.topRight span {
+    width: 115px;
+    font-weight: bold;
+}
+
+.topRight {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 180px;
+    gap: 30px;
+    align-items: center;
+    
+}
